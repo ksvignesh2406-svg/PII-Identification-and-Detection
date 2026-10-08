@@ -1,0 +1,62 @@
+CUSTOMER INFORMATION — SAMPLE / FICTIONAL DATA
+====================================================
+
+This document contains fictional PII for testing a PII detection and redaction system.
+None of the information below belongs to a real person.
+
+CUSTOMER PROFILE
+
+Full Name: Aarav Mehta
+Date of Birth: 14 March 2001
+Gender: Male
+Nationality: Indian
+
+Contact Details
+Email: aarav.mehta@example.com
+Phone: +91 98765 43210
+Alternate Phone: +91 91234 56789
+
+Address
+Address Line 1: Flat 4B, Rosewood Apartments
+Address Line 2: 18 Lake View Road
+City: Chennai
+State: Tamil Nadu
+PIN Code: 600042
+Country: India
+
+Identification
+Aadhaar Number: 2345 6789 0123
+PAN: ABCDE1234F
+Passport Number: P1234567
+Driver License Number: TN-01-2024-1234567
+
+Financial Information
+Bank Name: Example National Bank
+Account Number: 123456789012
+IFSC Code: EXMP0001234
+Credit Card Number: 4111 1111 1111 1111
+Card Expiry: 09/29
+CVV: 123
+
+Employment
+Company: Example Technologies Pvt. Ltd.
+Employee ID: EMP-2026-0147
+Job Title: Data Analyst
+Annual Salary: INR 1,200,000
+
+NETWORK / TECHNICAL DATA
+IPv4 Address: 192.0.2.45
+IPv6 Address: 2001:db8::1234
+MAC Address: 02:00:00:12:34:56
+
+CONTEXTUAL EXAMPLES
+
+1. The customer asked us to send the invoice to aarav.mehta@example.com.
+2. Aarav Mehta's date of birth is 14 March 2001.
+3. The support ticket was created from IP address 192.0.2.45.
+4. The meeting is scheduled for 14 March 2027.
+5. The company reported revenue of INR 1,200,000 for the employee's department.
+6. Example Technologies Pvt. Ltd. is located in Chennai.
+7. The order reference is ORD-2026-10482.
+
+END OF SAMPLE
