@@ -1,0 +1,81 @@
+| Institution | Account Type | Account Number | Routing Number | Balance USD |
+| Cadence Commercial | Operating Checking | [PHONE_NUMBER_1] | [PHONE_NUMBER_2] | $1,450,200 |
+| Citibank N.A. | Escrow Reserve | [PHONE_NUMBER_3] | [PHONE_NUMBER_4] | $850,000 |
+| Corporate Card | [PERSON_1] | [IN_AADHAAR_1] 7810 | N/A | $42,100 |
+
+## CADENCE FINANCIAL SERVICES — CREDIT RISK
+
+
+## EVALUATION
+
+
+Underwriting Assessment Artifact # CR-2026-904 | Classification: Highly
+
+
+Confidential
+
+
+This evaluation artifact records the commercial credit assessment conducted by Cadence Underwriting Team. The
+
+
+following documentation includes borrower identity proofs, banking histories, and credit bureau scores required for
+
+
+corporate loan underwriting compliance under regulatory guidelines.
+
+
+## 1. Primary Applicant & Guarantor Verification
+
+
+[PERSON_2]: [PERSON_3]
+
+
+Date of Birth: [DATE_OF_BIRTH_1]
+
+
+Social Security Number (SSN): [US_SSN_1]
+
+
+Residential Address: [STREET_ADDRESS_1], [LOCATION_1], White Plains, NY 10601
+
+
+Personal Email: [EMAIL_ADDRESS_1]
+
+
+Cell Phone: [PHONE_NUMBER_5]
+
+
+US Passport Number: [US_PASSPORT_1] (Expires: 08/2031)
+
+
+State [PERSON_4]: NY-DL[US_DRIVER_LICENSE_1]
+
+
+## 2. Financial Accounts & Banking Relationship
+
+
+Institution Account Type Account Number Routing Number Balance USD
+
+
+Cadence Commercial Operating Checking [BANK_ACCOUNT_1] [PHONE_NUMBER_2] $1,450,200
+
+
+Citibank N.A. Escrow Reserve [PHONE_NUMBER_3] [PHONE_NUMBER_4] $850,000
+
+
+Corporate Card [PERSON_1] [IN_AADHAAR_1] 7810 N/A $42,100
+
+
+## 3. Sign-off & Audit Trail
+
+
+Reviewed and verified by Senior [PERSON_5]: [PERSON_6] (Employee ID: [EMPLOYEE_ID_1]).
+
+
+Direct email: [EMAIL_ADDRESS_2] | Department: Risk Governance Division.
+
+
+Underwriter confirms that all customer identifiers have been verified. Under Cadence AI Policy 2026-R4, no raw
+
+
+customer PII may be processed by downstream generative AI models without prior tokenization.

@@ -1,0 +1,71 @@
+PERSONAL PROFILE
+
+
+Confidential Information — PII Redaction Test
+
+
+Personal Information
+
+
+Full Name: [PERSON_1]
+
+
+Date of Birth: [DATE_OF_BIRTH_1]
+
+
+Email: [EMAIL_ADDRESS_1]
+
+
+Phone: [PHONE_NUMBER_1]
+
+
+Address
+
+
+24, Lake View Road
+Anna Nagar
+Chennai, [PERSON_2]
+[LOCATION_1]
+
+
+Identification Details
+
+
+Education
+
+
+College: VIT Chennai
+
+
+Student ID: [STUDENT_ID_1]
+
+
+University [PERSON_3]: [EMAIL_ADDRESS_2]
+
+
+Emergency Contact
+
+
+Financial Information
+
+
+Bank Account Number: [PHONE_NUMBER_2]
+
+
+IFSC Code: [IFSC_CODE_1]
+
+
+Additional Information
+
+
+Arjun currently lives in Chennai and can be contacted at [EMAIL_ADDRESS_1] or [PHONE_NUMBER_1]. This document contains intentionally fictional information for testing PII detection and redaction.
+
+| Document Type | Number |
+| Passport | P1234567 |
+| PAN | ABCDE1234F |
+| Aadhaar | [IN_AADHAAR_1] |
+| Field | Information |
+| Name | [PERSON_4] |
+| Relationship | Sister |
+| Phone | [PHONE_NUMBER_3] |
+| [PERSON_3] | [EMAIL_ADDRESS_3] |

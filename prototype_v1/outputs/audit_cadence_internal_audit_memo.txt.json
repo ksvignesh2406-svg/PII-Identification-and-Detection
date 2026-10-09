@@ -1,0 +1,277 @@
+{
+  "file_name": "cadence_internal_audit_memo.txt",
+  "exposure_score": 100,
+  "exposure_level": "CRITICAL",
+  "total_pii": 18,
+  "categories": {
+    "Direct Personal Identity": 5,
+    "Contact Information": 5,
+    "Corporate / Internal Credentials": 2,
+    "Government Identification": 5,
+    "Financial & Banking": 1
+  },
+  "severities": {
+    "CRITICAL": 5,
+    "HIGH": 6,
+    "MEDIUM": 7,
+    "LOW": 0
+  },
+  "regulations": [
+    {
+      "framework": "GLBA (Gramm-Leach-Bliley Act)",
+      "mandate": "Safeguards Rule \u00a7 314.4",
+      "risk": "Transmission of nonpublic personal financial customer records to unauthorized third-party LLMs carries severe regulatory enforcement and non-compliance fines."
+    },
+    {
+      "framework": "NYDFS 23 NYCRR 500",
+      "mandate": "Cybersecurity Requirements for Financial Services",
+      "risk": "Exposure of confidential banking credentials and SSNs requires mandatory 72-hour notification to the Superintendent."
+    },
+    {
+      "framework": "GDPR / CCPA / CPRA",
+      "mandate": "Article 6 / 9 (Special Category Data) & CPRA \u00a7 1798.100",
+      "risk": "Processing biometric or government identifiers in generative AI without explicit consent violates cross-border data protection treaties."
+    },
+    {
+      "framework": "Internal Information Security Policy",
+      "mandate": "Cadence AI Governance Directive 2026-R4",
+      "risk": "Exposure of internal staff IDs and wire officer routing creates targeted spear-phishing and operational security vulnerabilities."
+    }
+  ],
+  "traceability": [
+    {
+      "id": 1,
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "severity": "HIGH",
+      "raw_value": "Daniel Miller",
+      "masked_value": "Da***er",
+      "surrogate_token": "[PERSON_1]",
+      "confidence": "85%",
+      "source": "Presidio_NER",
+      "location": "line: 5",
+      "context": "...FROM:  [Daniel Miller]  (daniel.miller@cadence-corp.c..."
+    },
+    {
+      "id": 2,
+      "entity_type": "EMAIL_ADDRESS",
+      "category": "Contact Information",
+      "severity": "MEDIUM",
+      "raw_value": "daniel.miller@cadence-corp.com",
+      "masked_value": "da***@cadence-corp.com",
+      "surrogate_token": "[EMAIL_ADDRESS_1]",
+      "confidence": "100%",
+      "source": "Regex_Checksum_Engine",
+      "location": "line: 5",
+      "context": "...FROM: Daniel Miller ( [daniel.miller@cadence-corp.com] , Emp ID: EMP-11029)..."
+    },
+    {
+      "id": 3,
+      "entity_type": "EMPLOYEE_ID",
+      "category": "Corporate / Internal Credentials",
+      "severity": "MEDIUM",
+      "raw_value": "EMP-11029",
+      "masked_value": "EM***29",
+      "surrogate_token": "[EMPLOYEE_ID_1]",
+      "confidence": "95%",
+      "source": "Cadence_Corporate_Engine",
+      "location": "line: 5",
+      "context": "...ler@cadence-corp.com, Emp ID:  [EMP-11029] )..."
+    },
+    {
+      "id": 4,
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "severity": "HIGH",
+      "raw_value": "Alexander Gomez",
+      "masked_value": "Al***ez",
+      "surrogate_token": "[PERSON_2]",
+      "confidence": "85%",
+      "source": "Presidio_NER",
+      "location": "line: 10",
+      "context": "...1. Lead Contractor:  [Alexander Gomez] ..."
+    },
+    {
+      "id": 5,
+      "entity_type": "EMAIL_ADDRESS",
+      "category": "Contact Information",
+      "severity": "MEDIUM",
+      "raw_value": "a.gomez@fintech-partners.io",
+      "masked_value": "a.***@fintech-partners.io",
+      "surrogate_token": "[EMAIL_ADDRESS_2]",
+      "confidence": "100%",
+      "source": "Regex_Checksum_Engine",
+      "location": "line: 11",
+      "context": "...Email:  [a.gomez@fintech-partners.io] ..."
+    },
+    {
+      "id": 6,
+      "entity_type": "PHONE_NUMBER",
+      "category": "Contact Information",
+      "severity": "MEDIUM",
+      "raw_value": "+1 650-555-9204",
+      "masked_value": "+1***04",
+      "surrogate_token": "[PHONE_NUMBER_1]",
+      "confidence": "90%",
+      "source": "Regex_Checksum_Engine",
+      "location": "line: 12",
+      "context": "...Phone:  [+1 650-555-9204] ..."
+    },
+    {
+      "id": 7,
+      "entity_type": "US_PASSPORT",
+      "category": "Government Identification",
+      "severity": "CRITICAL",
+      "raw_value": "P88291044",
+      "masked_value": "P8***44",
+      "surrogate_token": "[US_PASSPORT_1]",
+      "confidence": "95%",
+      "source": "Cadence_Rule",
+      "location": "line: 13",
+      "context": "...Passport ID:  [P88291044] ..."
+    },
+    {
+      "id": 8,
+      "entity_type": "BANK_ACCOUNT",
+      "category": "Financial & Banking",
+      "severity": "HIGH",
+      "raw_value": "992014827103",
+      "masked_value": "***-**-7103",
+      "surrogate_token": "[BANK_ACCOUNT_1]",
+      "confidence": "95%",
+      "source": "Cadence_Financial_Engine",
+      "location": "line: 14",
+      "context": "...Assigned Bank Wire Account:  [992014827103] ..."
+    },
+    {
+      "id": 9,
+      "entity_type": "IN_AADHAAR",
+      "category": "Government Identification",
+      "severity": "CRITICAL",
+      "raw_value": "9012 3456 7890",
+      "masked_value": "90***90",
+      "surrogate_token": "[IN_AADHAAR_1]",
+      "confidence": "95%",
+      "source": "Regex_Checksum_Engine",
+      "location": "line: 15",
+      "context": "...adhaar (Overseas Specialist):  [9012 3456 7890] ..."
+    },
+    {
+      "id": 10,
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "severity": "HIGH",
+      "raw_value": "Priya Raman",
+      "masked_value": "Pr***an",
+      "surrogate_token": "[PERSON_3]",
+      "confidence": "95%",
+      "source": "Cadence_Contextual_Rule",
+      "location": "line: 17",
+      "context": "...2. Senior Risk Manager: Dr.  [Priya Raman] ..."
+    },
+    {
+      "id": 11,
+      "entity_type": "EMAIL_ADDRESS",
+      "category": "Contact Information",
+      "severity": "MEDIUM",
+      "raw_value": "priya.raman@cadence-corp.com",
+      "masked_value": "pr***@cadence-corp.com",
+      "surrogate_token": "[EMAIL_ADDRESS_3]",
+      "confidence": "100%",
+      "source": "Regex_Checksum_Engine",
+      "location": "line: 18",
+      "context": "...Email:  [priya.raman@cadence-corp.com] ..."
+    },
+    {
+      "id": 12,
+      "entity_type": "PHONE_NUMBER",
+      "category": "Contact Information",
+      "severity": "MEDIUM",
+      "raw_value": "+91 98840 12345",
+      "masked_value": "+9***45",
+      "surrogate_token": "[PHONE_NUMBER_2]",
+      "confidence": "75%",
+      "source": "Presidio_NER",
+      "location": "line: 19",
+      "context": "...Phone:  [+91 98840 12345] ..."
+    },
+    {
+      "id": 13,
+      "entity_type": "IN_PAN",
+      "category": "Government Identification",
+      "severity": "CRITICAL",
+      "raw_value": "ABCPR1234K",
+      "masked_value": "AB***4K",
+      "surrogate_token": "[IN_PAN_1]",
+      "confidence": "98%",
+      "source": "Regex_Checksum_Engine",
+      "location": "line: 20",
+      "context": "...PAN Card:  [ABCPR1234K] ..."
+    },
+    {
+      "id": 14,
+      "entity_type": "EMPLOYEE_ID",
+      "category": "Corporate / Internal Credentials",
+      "severity": "MEDIUM",
+      "raw_value": "EMP-44021",
+      "masked_value": "EM***21",
+      "surrogate_token": "[EMPLOYEE_ID_2]",
+      "confidence": "95%",
+      "source": "Cadence_Corporate_Engine",
+      "location": "line: 21",
+      "context": "...Employee ID:  [EMP-44021] ..."
+    },
+    {
+      "id": 15,
+      "entity_type": "US_SSN",
+      "category": "Government Identification",
+      "severity": "CRITICAL",
+      "raw_value": "219-40-5812",
+      "masked_value": "***-**-5812",
+      "surrogate_token": "[US_SSN_1]",
+      "confidence": "100%",
+      "source": "Regex_Checksum_Engine",
+      "location": "line: 24",
+      "context": ".... Sensitive data included SSN  [219-40-5812]  and credit card 5425 2334 890..."
+    },
+    {
+      "id": 16,
+      "entity_type": "IN_AADHAAR",
+      "category": "Government Identification",
+      "severity": "CRITICAL",
+      "raw_value": "5425 2334 8901",
+      "masked_value": "54***01",
+      "surrogate_token": "[IN_AADHAAR_2]",
+      "confidence": "95%",
+      "source": "Regex_Checksum_Engine",
+      "location": "line: 24",
+      "context": "...N 219-40-5812 and credit card  [5425 2334 8901]  2345...."
+    },
+    {
+      "id": 17,
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "severity": "HIGH",
+      "raw_value": "Optiv",
+      "masked_value": "Op***iv",
+      "surrogate_token": "[PERSON_4]",
+      "confidence": "85%",
+      "source": "Presidio_NER",
+      "location": "line: 25",
+      "context": "...: Immediate implementation of  [Optiv]  Automated PII Gateway before ..."
+    },
+    {
+      "id": 18,
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "severity": "HIGH",
+      "raw_value": "PII Gateway",
+      "masked_value": "PI***ay",
+      "surrogate_token": "[PERSON_5]",
+      "confidence": "85%",
+      "source": "Presidio_NER",
+      "location": "line: 25",
+      "context": "...ementation of Optiv Automated  [PII Gateway]  before LLM ingestion...."
+    }
+  ]
+}

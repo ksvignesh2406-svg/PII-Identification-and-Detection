@@ -1,0 +1,211 @@
+{
+  "file_name": "input.docx",
+  "exposure_score": 74,
+  "exposure_level": "CRITICAL",
+  "total_pii": 13,
+  "categories": {
+    "Financial & Banking": 1,
+    "Direct Personal Identity": 7,
+    "Contact Information": 4,
+    "Corporate / Internal Credentials": 1
+  },
+  "severities": {
+    "CRITICAL": 0,
+    "HIGH": 7,
+    "MEDIUM": 6,
+    "LOW": 0
+  },
+  "regulations": [
+    {
+      "framework": "GLBA (Gramm-Leach-Bliley Act)",
+      "mandate": "Safeguards Rule \u00a7 314.4",
+      "risk": "Transmission of nonpublic personal financial customer records to unauthorized third-party LLMs carries severe regulatory enforcement and non-compliance fines."
+    },
+    {
+      "framework": "NYDFS 23 NYCRR 500",
+      "mandate": "Cybersecurity Requirements for Financial Services",
+      "risk": "Exposure of confidential banking credentials and SSNs requires mandatory 72-hour notification to the Superintendent."
+    },
+    {
+      "framework": "GDPR / CCPA / CPRA",
+      "mandate": "Article 6 / 9 (Special Category Data) & CPRA \u00a7 1798.100",
+      "risk": "Processing biometric or government identifiers in generative AI without explicit consent violates cross-border data protection treaties."
+    },
+    {
+      "framework": "Internal Information Security Policy",
+      "mandate": "Cadence AI Governance Directive 2026-R4",
+      "risk": "Exposure of internal staff IDs and wire officer routing creates targeted spear-phishing and operational security vulnerabilities."
+    }
+  ],
+  "traceability": [
+    {
+      "id": 1,
+      "entity_type": "SWIFT_BIC",
+      "category": "Financial & Banking",
+      "severity": "HIGH",
+      "raw_value": "INFORMATION",
+      "masked_value": "IN***ON",
+      "surrogate_token": "[SWIFT_BIC_1]",
+      "confidence": "92%",
+      "source": "Regex_Checksum_Engine",
+      "location": "paragraph_index: 0 | section: body",
+      "context": "...PERSONAL  [INFORMATION]  TEST DOCUMENT..."
+    },
+    {
+      "id": 2,
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "severity": "HIGH",
+      "raw_value": "Vignesh Kumar",
+      "masked_value": "Vi***ar",
+      "surrogate_token": "[PERSON_1]",
+      "confidence": "95%",
+      "source": "Cadence_Contextual_Rule",
+      "location": "paragraph_index: 2 | section: body",
+      "context": "...Name:  [Vignesh Kumar] ..."
+    },
+    {
+      "id": 3,
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "severity": "HIGH",
+      "raw_value": "Email",
+      "masked_value": "Em***il",
+      "surrogate_token": "[PERSON_2]",
+      "confidence": "85%",
+      "source": "Presidio_NER",
+      "location": "paragraph_index: 3 | section: body",
+      "context": "... [Email] : vignesh.kumar@gmail.com..."
+    },
+    {
+      "id": 4,
+      "entity_type": "EMAIL_ADDRESS",
+      "category": "Contact Information",
+      "severity": "MEDIUM",
+      "raw_value": "vignesh.kumar@gmail.com",
+      "masked_value": "vi***@gmail.com",
+      "surrogate_token": "[EMAIL_ADDRESS_1]",
+      "confidence": "100%",
+      "source": "Regex_Checksum_Engine",
+      "location": "paragraph_index: 3 | section: body",
+      "context": "...Email:  [vignesh.kumar@gmail.com] ..."
+    },
+    {
+      "id": 5,
+      "entity_type": "PHONE_NUMBER",
+      "category": "Contact Information",
+      "severity": "MEDIUM",
+      "raw_value": "+91 9876543210",
+      "masked_value": "+9***10",
+      "surrogate_token": "[PHONE_NUMBER_1]",
+      "confidence": "90%",
+      "source": "Regex_Checksum_Engine",
+      "location": "paragraph_index: 4 | section: body",
+      "context": "...Phone:  [+91 9876543210] ..."
+    },
+    {
+      "id": 6,
+      "entity_type": "STREET_ADDRESS",
+      "category": "Direct Personal Identity",
+      "severity": "MEDIUM",
+      "raw_value": "12 Gandhi Street",
+      "masked_value": "12***et",
+      "surrogate_token": "[STREET_ADDRESS_1]",
+      "confidence": "85%",
+      "source": "Cadence_Contextual_Engine",
+      "location": "paragraph_index: 7 | section: body",
+      "context": "... [12 Gandhi Street] ,..."
+    },
+    {
+      "id": 7,
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "severity": "HIGH",
+      "raw_value": "Tamil Nadu",
+      "masked_value": "Ta***du",
+      "surrogate_token": "[PERSON_3]",
+      "confidence": "85%",
+      "source": "Presidio_NER",
+      "location": "paragraph_index: 8 | section: body",
+      "context": "...Chennai,  [Tamil Nadu]  600001..."
+    },
+    {
+      "id": 8,
+      "entity_type": "DATE_OF_BIRTH",
+      "category": "Direct Personal Identity",
+      "severity": "HIGH",
+      "raw_value": "15/08/2006",
+      "masked_value": "15***06",
+      "surrogate_token": "[DATE_OF_BIRTH_1]",
+      "confidence": "95%",
+      "source": "Cadence_Rule",
+      "location": "paragraph_index: 10 | section: body",
+      "context": "...Date of Birth:  [15/08/2006] ..."
+    },
+    {
+      "id": 9,
+      "entity_type": "STUDENT_ID",
+      "category": "Corporate / Internal Credentials",
+      "severity": "MEDIUM",
+      "raw_value": "24BPS1091",
+      "masked_value": "24***91",
+      "surrogate_token": "[STUDENT_ID_1]",
+      "confidence": "90%",
+      "source": "Regex_Checksum_Engine",
+      "location": "paragraph_index: 13 | section: body",
+      "context": "...My student ID is  [24BPS1091] ...."
+    },
+    {
+      "id": 10,
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "severity": "HIGH",
+      "raw_value": "Rahul Sharma",
+      "masked_value": "Ra***ma",
+      "surrogate_token": "[PERSON_4]",
+      "confidence": "95%",
+      "source": "Cadence_Contextual_Rule",
+      "location": "paragraph_index: 16 | section: body",
+      "context": "...Name:  [Rahul Sharma] ..."
+    },
+    {
+      "id": 11,
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "severity": "HIGH",
+      "raw_value": "Email",
+      "masked_value": "Em***il",
+      "surrogate_token": "[PERSON_2]",
+      "confidence": "85%",
+      "source": "Presidio_NER",
+      "location": "paragraph_index: 17 | section: body",
+      "context": "... [Email] : rahul.sharma@example.com..."
+    },
+    {
+      "id": 12,
+      "entity_type": "EMAIL_ADDRESS",
+      "category": "Contact Information",
+      "severity": "MEDIUM",
+      "raw_value": "rahul.sharma@example.com",
+      "masked_value": "ra***@example.com",
+      "surrogate_token": "[EMAIL_ADDRESS_2]",
+      "confidence": "100%",
+      "source": "Regex_Checksum_Engine",
+      "location": "paragraph_index: 17 | section: body",
+      "context": "...Email:  [rahul.sharma@example.com] ..."
+    },
+    {
+      "id": 13,
+      "entity_type": "PHONE_NUMBER",
+      "category": "Contact Information",
+      "severity": "MEDIUM",
+      "raw_value": "+91 9123456780",
+      "masked_value": "+9***80",
+      "surrogate_token": "[PHONE_NUMBER_2]",
+      "confidence": "90%",
+      "source": "Regex_Checksum_Engine",
+      "location": "paragraph_index: 18 | section: body",
+      "context": "...Phone:  [+91 9123456780] ..."
+    }
+  ]
+}

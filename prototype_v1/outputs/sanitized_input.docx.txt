@@ -1,0 +1,43 @@
+PERSONAL [SWIFT_BIC_1] TEST DOCUMENT
+
+
+Name: [PERSON_1]
+
+
+[PERSON_2]: [EMAIL_ADDRESS_1]
+
+
+Phone: [PHONE_NUMBER_1]
+
+
+Address:
+
+
+[STREET_ADDRESS_1],
+
+
+Chennai, [PERSON_3] 600001
+
+
+Date of Birth: [DATE_OF_BIRTH_1]
+
+
+My college is VIT Chennai.
+
+
+My student ID is [STUDENT_ID_1].
+
+
+Emergency Contact:
+
+
+Name: [PERSON_4]
+
+
+[PERSON_2]: [EMAIL_ADDRESS_2]
+
+
+Phone: [PHONE_NUMBER_2]
+
+
+This document is being used to test PII detection and redaction.

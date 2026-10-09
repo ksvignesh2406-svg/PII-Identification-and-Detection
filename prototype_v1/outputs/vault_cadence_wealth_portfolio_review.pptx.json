@@ -1,0 +1,197 @@
+{
+  "total_tokens": 32,
+  "mappings": {
+    "[PERSON_1]": {
+      "original_value": "Q3 High Net",
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "token": "[PERSON_1]"
+    },
+    "[PERSON_2]": {
+      "original_value": "Marcus Sterling",
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "token": "[PERSON_2]"
+    },
+    "[EMPLOYEE_ID_1]": {
+      "original_value": "EMP-88392",
+      "entity_type": "EMPLOYEE_ID",
+      "category": "Corporate / Internal Credentials",
+      "token": "[EMPLOYEE_ID_1]"
+    },
+    "[LOCATION_1]": {
+      "original_value": "Contact",
+      "entity_type": "LOCATION",
+      "category": "Geographic / Location Data",
+      "token": "[LOCATION_1]"
+    },
+    "[PERSON_3]": {
+      "original_value": "Eleanor Vance",
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "token": "[PERSON_3]"
+    },
+    "[US_SSN_1]": {
+      "original_value": "142-88-9031",
+      "entity_type": "US_SSN",
+      "category": "Government Identification",
+      "token": "[US_SSN_1]"
+    },
+    "[BANK_ACCOUNT_1]": {
+      "original_value": "902148291",
+      "entity_type": "BANK_ACCOUNT",
+      "category": "Financial & Banking",
+      "token": "[BANK_ACCOUNT_1]"
+    },
+    "[EMAIL_ADDRESS_1]": {
+      "original_value": "eleanor.vance@vancetech.com",
+      "entity_type": "EMAIL_ADDRESS",
+      "category": "Contact Information",
+      "token": "[EMAIL_ADDRESS_1]"
+    },
+    "[PHONE_NUMBER_1]": {
+      "original_value": "+1 (212) 555-0194",
+      "entity_type": "PHONE_NUMBER",
+      "category": "Contact Information",
+      "token": "[PHONE_NUMBER_1]"
+    },
+    "[PERSON_4]": {
+      "original_value": "David K. Richardson",
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "token": "[PERSON_4]"
+    },
+    "[US_SSN_2]": {
+      "original_value": "873-12-4490",
+      "entity_type": "US_SSN",
+      "category": "Government Identification",
+      "token": "[US_SSN_2]"
+    },
+    "[BANK_ACCOUNT_2]": {
+      "original_value": "449182304",
+      "entity_type": "BANK_ACCOUNT",
+      "category": "Financial & Banking",
+      "token": "[BANK_ACCOUNT_2]"
+    },
+    "[EMAIL_ADDRESS_2]": {
+      "original_value": "drichardson@richardsoncap.com",
+      "entity_type": "EMAIL_ADDRESS",
+      "category": "Contact Information",
+      "token": "[EMAIL_ADDRESS_2]"
+    },
+    "[PHONE_NUMBER_2]": {
+      "original_value": "+1 (646) 555-8821",
+      "entity_type": "PHONE_NUMBER",
+      "category": "Contact Information",
+      "token": "[PHONE_NUMBER_2]"
+    },
+    "[PERSON_5]": {
+      "original_value": "Sarah Jenkins-Wu",
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "token": "[PERSON_5]"
+    },
+    "[US_SSN_3]": {
+      "original_value": "309-54-1182",
+      "entity_type": "US_SSN",
+      "category": "Government Identification",
+      "token": "[US_SSN_3]"
+    },
+    "[BANK_ACCOUNT_3]": {
+      "original_value": "773829105",
+      "entity_type": "BANK_ACCOUNT",
+      "category": "Financial & Banking",
+      "token": "[BANK_ACCOUNT_3]"
+    },
+    "[EMAIL_ADDRESS_3]": {
+      "original_value": "sarah.j.wu@apexglobal.net",
+      "entity_type": "EMAIL_ADDRESS",
+      "category": "Contact Information",
+      "token": "[EMAIL_ADDRESS_3]"
+    },
+    "[PHONE_NUMBER_3]": {
+      "original_value": "+1 (917) 555-3419",
+      "entity_type": "PHONE_NUMBER",
+      "category": "Contact Information",
+      "token": "[PHONE_NUMBER_3]"
+    },
+    "[PERSON_6]": {
+      "original_value": "Beneficiary Name",
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "token": "[PERSON_6]"
+    },
+    "[PERSON_7]": {
+      "original_value": "Jonathan Hayes",
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "token": "[PERSON_7]"
+    },
+    "[EMAIL_ADDRESS_4]": {
+      "original_value": "jonathan.hayes@cadence-corp.com",
+      "entity_type": "EMAIL_ADDRESS",
+      "category": "Contact Information",
+      "token": "[EMAIL_ADDRESS_4]"
+    },
+    "[PHONE_NUMBER_4]": {
+      "original_value": "+1 (212) 555-7733",
+      "entity_type": "PHONE_NUMBER",
+      "category": "Contact Information",
+      "token": "[PHONE_NUMBER_4]"
+    },
+    "[STREET_ADDRESS_1]": {
+      "original_value": "380 Madison Avenue",
+      "entity_type": "STREET_ADDRESS",
+      "category": "Direct Personal Identity",
+      "token": "[STREET_ADDRESS_1]"
+    },
+    "[PERSON_8]": {
+      "original_value": "Floor",
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "token": "[PERSON_8]"
+    },
+    "[LOCATION_2]": {
+      "original_value": "New York",
+      "entity_type": "LOCATION",
+      "category": "Geographic / Location Data",
+      "token": "[LOCATION_2]"
+    },
+    "[PHONE_NUMBER_5]": {
+      "original_value": "021000021",
+      "entity_type": "PHONE_NUMBER",
+      "category": "Contact Information",
+      "token": "[PHONE_NUMBER_5]"
+    },
+    "[BANK_ACCOUNT_4]": {
+      "original_value": "883920194012",
+      "entity_type": "BANK_ACCOUNT",
+      "category": "Financial & Banking",
+      "token": "[BANK_ACCOUNT_4]"
+    },
+    "[SWIFT_BIC_1]": {
+      "original_value": "CHASUS33XXX",
+      "entity_type": "SWIFT_BIC",
+      "category": "Financial & Banking",
+      "token": "[SWIFT_BIC_1]"
+    },
+    "[US_SSN_4]": {
+      "original_value": "982-11-4092",
+      "entity_type": "US_SSN",
+      "category": "Government Identification",
+      "token": "[US_SSN_4]"
+    },
+    "[PERSON_9]": {
+      "original_value": "Driver License",
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "token": "[PERSON_9]"
+    },
+    "[US_DRIVER_LICENSE_1]": {
+      "original_value": "NY-7749201",
+      "entity_type": "US_DRIVER_LICENSE",
+      "category": "Government Identification",
+      "token": "[US_DRIVER_LICENSE_1]"
+    }
+  }
+}

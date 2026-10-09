@@ -1,0 +1,25 @@
+CADENCE FINANCIAL SERVICES - INTERNAL AUDIT REPORT
+MEMORANDUM | STRICTLY CONFIDENTIAL
+DATE: September 28, 2026
+TO: Cadence TPRM & AI Governance Committee
+FROM: [PERSON_1] ([EMAIL_ADDRESS_1], Emp ID: [EMPLOYEE_ID_1])
+SUBJECT: Security Incident Review & PII Containment
+
+During the audit of external vendor sub-processor interfaces, the following contractor and employee credentials were observed in transmission logs:
+
+1. Lead Contractor: [PERSON_2]
+   Email: [EMAIL_ADDRESS_2]
+   Phone: [PHONE_NUMBER_1]
+   Passport ID: [US_PASSPORT_1]
+   Assigned Bank Wire Account: [BANK_ACCOUNT_1]
+   Aadhaar (Overseas Specialist): [IN_AADHAAR_1]
+
+2. Senior Risk Manager: Dr. [PERSON_3]
+   Email: [EMAIL_ADDRESS_3]
+   Phone: [PHONE_NUMBER_2]
+   PAN Card: [IN_PAN_1]
+   Employee ID: [EMPLOYEE_ID_2]
+
+3. Incident Context:
+   Vendor API submitted customer records without sanitization. Sensitive data included SSN [US_SSN_1] and credit card [IN_AADHAAR_2] 2345.
+   Recommendation: Immediate implementation of [PERSON_4] Automated [PERSON_5] before LLM ingestion.

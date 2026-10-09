@@ -1,0 +1,38 @@
+Cadence Financial Services
+
+
+[PERSON_1] Worth Client Portfolio & KYC Due Diligence Review
+
+
+Author: [PERSON_2] ([EMPLOYEE_ID_1]) | Division: Private Wealth Management
+
+
+Client Portfolios & Identity Verification Records
+
+| Client Name | Tax ID / SSN | Account Number | [LOCATION_1] Email | Phone |
+| [PERSON_3] | [US_SSN_1] | ACCT-[BANK_ACCOUNT_1] | [EMAIL_ADDRESS_1] | [PHONE_NUMBER_1] |
+| [PERSON_4] | [US_SSN_2] | ACCT-[BANK_ACCOUNT_2] | [EMAIL_ADDRESS_2] | [PHONE_NUMBER_2] |
+| [PERSON_5] | [US_SSN_3] | ACCT-[BANK_ACCOUNT_3] | [EMAIL_ADDRESS_3] | [PHONE_NUMBER_3] |
+
+CONFIDENTIAL: Wire Instructions & Settlement Officer Notes
+
+
+[PERSON_6]: [PERSON_7] (Cadence Escrow Services)
+
+
+Officer Contact: [EMAIL_ADDRESS_4] | Direct: [PHONE_NUMBER_4]
+
+
+Beneficiary Address: [STREET_ADDRESS_1], 18th [PERSON_8], [LOCATION_2], NY 10017
+
+
+Bank Routing Number (ABA): [PHONE_NUMBER_5] (JPMorgan Chase NY)
+
+
+Cadence Settlement Account: [BANK_ACCOUNT_4]
+
+
+SWIFT / BIC: [SWIFT_BIC_1]
+
+
+Note: Customer SSN [US_SSN_4] confirmed against NY State [PERSON_9] # [US_DRIVER_LICENSE_1]. Do not share raw identifiers across unencrypted channels.

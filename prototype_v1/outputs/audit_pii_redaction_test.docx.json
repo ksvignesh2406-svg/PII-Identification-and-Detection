@@ -1,0 +1,278 @@
+{
+  "file_name": "pii_redaction_test.docx",
+  "exposure_score": 94,
+  "exposure_level": "CRITICAL",
+  "total_pii": 18,
+  "categories": {
+    "Direct Personal Identity": 6,
+    "Contact Information": 8,
+    "Geographic / Location Data": 1,
+    "Corporate / Internal Credentials": 1,
+    "Financial & Banking": 1,
+    "Government Identification": 1
+  },
+  "severities": {
+    "CRITICAL": 1,
+    "HIGH": 6,
+    "MEDIUM": 10,
+    "LOW": 1
+  },
+  "regulations": [
+    {
+      "framework": "GLBA (Gramm-Leach-Bliley Act)",
+      "mandate": "Safeguards Rule \u00a7 314.4",
+      "risk": "Transmission of nonpublic personal financial customer records to unauthorized third-party LLMs carries severe regulatory enforcement and non-compliance fines."
+    },
+    {
+      "framework": "NYDFS 23 NYCRR 500",
+      "mandate": "Cybersecurity Requirements for Financial Services",
+      "risk": "Exposure of confidential banking credentials and SSNs requires mandatory 72-hour notification to the Superintendent."
+    },
+    {
+      "framework": "GDPR / CCPA / CPRA",
+      "mandate": "Article 6 / 9 (Special Category Data) & CPRA \u00a7 1798.100",
+      "risk": "Processing biometric or government identifiers in generative AI without explicit consent violates cross-border data protection treaties."
+    },
+    {
+      "framework": "Internal Information Security Policy",
+      "mandate": "Cadence AI Governance Directive 2026-R4",
+      "risk": "Exposure of internal staff IDs and wire officer routing creates targeted spear-phishing and operational security vulnerabilities."
+    }
+  ],
+  "traceability": [
+    {
+      "id": 1,
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "severity": "HIGH",
+      "raw_value": "Arjun Mehta",
+      "masked_value": "Ar***ta",
+      "surrogate_token": "[PERSON_1]",
+      "confidence": "95%",
+      "source": "Cadence_Contextual_Rule",
+      "location": "paragraph_index: 4 | section: body",
+      "context": "...Full Name:  [Arjun Mehta] ..."
+    },
+    {
+      "id": 2,
+      "entity_type": "DATE_OF_BIRTH",
+      "category": "Direct Personal Identity",
+      "severity": "HIGH",
+      "raw_value": "14 March 2004",
+      "masked_value": "14***04",
+      "surrogate_token": "[DATE_OF_BIRTH_1]",
+      "confidence": "95%",
+      "source": "Cadence_Rule",
+      "location": "paragraph_index: 5 | section: body",
+      "context": "...Date of Birth:  [14 March 2004] ..."
+    },
+    {
+      "id": 3,
+      "entity_type": "EMAIL_ADDRESS",
+      "category": "Contact Information",
+      "severity": "MEDIUM",
+      "raw_value": "arjun.mehta@gmail.com",
+      "masked_value": "ar***@gmail.com",
+      "surrogate_token": "[EMAIL_ADDRESS_1]",
+      "confidence": "100%",
+      "source": "Regex_Checksum_Engine",
+      "location": "paragraph_index: 6 | section: body",
+      "context": "...Email:  [arjun.mehta@gmail.com] ..."
+    },
+    {
+      "id": 4,
+      "entity_type": "PHONE_NUMBER",
+      "category": "Contact Information",
+      "severity": "MEDIUM",
+      "raw_value": "+91 98765 43210",
+      "masked_value": "+9***10",
+      "surrogate_token": "[PHONE_NUMBER_1]",
+      "confidence": "75%",
+      "source": "Presidio_NER",
+      "location": "paragraph_index: 7 | section: body",
+      "context": "...Phone:  [+91 98765 43210] ..."
+    },
+    {
+      "id": 5,
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "severity": "HIGH",
+      "raw_value": "Tamil Nadu 600040",
+      "masked_value": "Ta***40",
+      "surrogate_token": "[PERSON_2]",
+      "confidence": "85%",
+      "source": "Presidio_NER",
+      "location": "paragraph_index: 9 | section: body",
+      "context": "...View Road Anna Nagar Chennai,  [Tamil Nadu 600040]  India..."
+    },
+    {
+      "id": 6,
+      "entity_type": "LOCATION",
+      "category": "Geographic / Location Data",
+      "severity": "LOW",
+      "raw_value": "India",
+      "masked_value": "In***ia",
+      "surrogate_token": "[LOCATION_1]",
+      "confidence": "85%",
+      "source": "Presidio_NER",
+      "location": "paragraph_index: 9 | section: body",
+      "context": "...ar Chennai, Tamil Nadu 600040  [India] ..."
+    },
+    {
+      "id": 7,
+      "entity_type": "STUDENT_ID",
+      "category": "Corporate / Internal Credentials",
+      "severity": "MEDIUM",
+      "raw_value": "22BCE1234",
+      "masked_value": "22***34",
+      "surrogate_token": "[STUDENT_ID_1]",
+      "confidence": "90%",
+      "source": "Regex_Checksum_Engine",
+      "location": "paragraph_index: 13 | section: body",
+      "context": "...Student ID:  [22BCE1234] ..."
+    },
+    {
+      "id": 8,
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "severity": "HIGH",
+      "raw_value": "Email",
+      "masked_value": "Em***il",
+      "surrogate_token": "[PERSON_3]",
+      "confidence": "85%",
+      "source": "Presidio_NER",
+      "location": "paragraph_index: 14 | section: body",
+      "context": "...University  [Email] : arjun.mehta@vit.ac.in..."
+    },
+    {
+      "id": 9,
+      "entity_type": "EMAIL_ADDRESS",
+      "category": "Contact Information",
+      "severity": "MEDIUM",
+      "raw_value": "arjun.mehta@vit.ac.in",
+      "masked_value": "ar***@vit.ac.in",
+      "surrogate_token": "[EMAIL_ADDRESS_2]",
+      "confidence": "100%",
+      "source": "Regex_Checksum_Engine",
+      "location": "paragraph_index: 14 | section: body",
+      "context": "...University Email:  [arjun.mehta@vit.ac.in] ..."
+    },
+    {
+      "id": 10,
+      "entity_type": "PHONE_NUMBER",
+      "category": "Contact Information",
+      "severity": "MEDIUM",
+      "raw_value": "123456789012",
+      "masked_value": "12***12",
+      "surrogate_token": "[PHONE_NUMBER_2]",
+      "confidence": "90%",
+      "source": "Regex_Checksum_Engine",
+      "location": "paragraph_index: 17 | section: body",
+      "context": "...Bank Account Number:  [123456789012] ..."
+    },
+    {
+      "id": 11,
+      "entity_type": "IFSC_CODE",
+      "category": "Financial & Banking",
+      "severity": "MEDIUM",
+      "raw_value": "SBIN0001234",
+      "masked_value": "SB***34",
+      "surrogate_token": "[IFSC_CODE_1]",
+      "confidence": "98%",
+      "source": "Regex_Checksum_Engine",
+      "location": "paragraph_index: 18 | section: body",
+      "context": "...IFSC Code:  [SBIN0001234] ..."
+    },
+    {
+      "id": 12,
+      "entity_type": "EMAIL_ADDRESS",
+      "category": "Contact Information",
+      "severity": "MEDIUM",
+      "raw_value": "arjun.mehta@gmail.com",
+      "masked_value": "ar***@gmail.com",
+      "surrogate_token": "[EMAIL_ADDRESS_1]",
+      "confidence": "100%",
+      "source": "Regex_Checksum_Engine",
+      "location": "paragraph_index: 20 | section: body",
+      "context": "...ennai and can be contacted at  [arjun.mehta@gmail.com]  or +91 98765 43210. This docu..."
+    },
+    {
+      "id": 13,
+      "entity_type": "PHONE_NUMBER",
+      "category": "Contact Information",
+      "severity": "MEDIUM",
+      "raw_value": "+91 98765 43210",
+      "masked_value": "+9***10",
+      "surrogate_token": "[PHONE_NUMBER_1]",
+      "confidence": "40%",
+      "source": "Presidio_NER",
+      "location": "paragraph_index: 20 | section: body",
+      "context": "...d at arjun.mehta@gmail.com or  [+91 98765 43210] . This document contains inten..."
+    },
+    {
+      "id": 14,
+      "entity_type": "IN_AADHAAR",
+      "category": "Government Identification",
+      "severity": "CRITICAL",
+      "raw_value": "4521 7836 9012",
+      "masked_value": "45***12",
+      "surrogate_token": "[IN_AADHAAR_1]",
+      "confidence": "95%",
+      "source": "Regex_Checksum_Engine",
+      "location": "table_index: 0 | row: 3 | cell_count: 2",
+      "context": "...Aadhaar |  [4521 7836 9012] ..."
+    },
+    {
+      "id": 15,
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "severity": "HIGH",
+      "raw_value": "Priya Mehta",
+      "masked_value": "Pr***ta",
+      "surrogate_token": "[PERSON_4]",
+      "confidence": "85%",
+      "source": "Presidio_NER",
+      "location": "table_index: 1 | row: 1 | cell_count: 2",
+      "context": "...Name |  [Priya Mehta] ..."
+    },
+    {
+      "id": 16,
+      "entity_type": "PHONE_NUMBER",
+      "category": "Contact Information",
+      "severity": "MEDIUM",
+      "raw_value": "+91 91234 56789",
+      "masked_value": "+9***89",
+      "surrogate_token": "[PHONE_NUMBER_3]",
+      "confidence": "75%",
+      "source": "Presidio_NER",
+      "location": "table_index: 1 | row: 3 | cell_count: 2",
+      "context": "...Phone |  [+91 91234 56789] ..."
+    },
+    {
+      "id": 17,
+      "entity_type": "PERSON",
+      "category": "Direct Personal Identity",
+      "severity": "HIGH",
+      "raw_value": "Email",
+      "masked_value": "Em***il",
+      "surrogate_token": "[PERSON_3]",
+      "confidence": "85%",
+      "source": "Presidio_NER",
+      "location": "table_index: 1 | row: 4 | cell_count: 2",
+      "context": "... [Email]  | priya.mehta@example.com..."
+    },
+    {
+      "id": 18,
+      "entity_type": "EMAIL_ADDRESS",
+      "category": "Contact Information",
+      "severity": "MEDIUM",
+      "raw_value": "priya.mehta@example.com",
+      "masked_value": "pr***@example.com",
+      "surrogate_token": "[EMAIL_ADDRESS_3]",
+      "confidence": "100%",
+      "source": "Regex_Checksum_Engine",
+      "location": "table_index: 1 | row: 4 | cell_count: 2",
+      "context": "...Email |  [priya.mehta@example.com] ..."
+    }
+  ]
+}
